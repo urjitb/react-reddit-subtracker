@@ -1,38 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import { Grommet, Box } from 'grommet';
-
-const theme = {
-  global: {
-    font: {
-      family: 'Roboto',
-      size: '18px',
-      height: '20px',
-    },
-  },
-};
-
-const AppBar = (props) => (
-    <Box
-      tag='header'
-      direction='row'
-      align='center'
-      justify='between'
-      background='brand'
-      pad={{ left: 'medium', right: 'small', vertical: 'small' }}
-      elevation='medium'
-      style={{ zIndex: '1' }}
-      {...props}
-    />
-  );
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-
-    <Grommet theme={theme}>
-      <AppBar>Hello Grommet!</AppBar>
+    <div className="App">
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -53,8 +26,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </Grommet>
-
+    </div>
   )
 }
 
